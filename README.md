@@ -1,6 +1,4 @@
-# Assignment-Starter-Repo-Template
-
-TODO: Update the above to your repo name
+# Simple Query Assignment
 
 ## Instructions for students
 
@@ -9,4 +7,7 @@ TODO: Update the above to your repo name
 
 ### Directions - Copy/Pasted from Canvas
 
-TODO
+* Add a DocSting to the top of the file
+* Review the database code to understand the flow
+* finish the `select_all_students` method
+* finish the main method to call `select_all_students`

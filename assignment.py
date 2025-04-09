@@ -92,3 +92,38 @@ def select_all_persons(conn):
     rows = cur.fetchall()
 
     return rows # return the rows
+
+# TODO 2: Finish the select all students method
+def select_all_students(conn):
+    """Query all rows of student table
+    :param conn: the connection object
+    :return:
+    """
+
+
+    ### YOUR CODE GOES HERE ###
+
+
+if __name__ == "__main__":
+    #Attempt to create tables if they don't exist
+    try:
+        create_tables("pythonsqlite.db")
+    except:
+        print("Tables may alreadyt exist")
+    
+    #Create some tows in the database; uncomment this and run it once
+    #conn = create_connection("pythonsqlite.db")
+    #with conn:
+    #    person = ('Rob', 'Thomas')
+    #    person_id = create_person(conn, person)
+
+    #    student = (person_id, 'Songwriting', '2000-01-01')
+    #    student_id = create_student(conn, student)
+    
+    # Read rows in the DB, can leave this uncommented
+    with conn:
+        rows = select_all_persons(conn)
+        for row in rows:
+            print(row)
+
+    # TODO 3: copy the above method but modify it for select all students
